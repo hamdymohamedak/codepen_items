@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+
+<body>
+    <div class="p">
+        <div class="ey"></div>
+        <div class="ey2"></div>
+    </div>
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background: #81008F;
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            transition: 0.2s;
+        }
+
+        .p {
+            width: 7.8125rem;
+            /* 125px */
+            height: 6.25rem;
+            /* 100px */
+            background: #DBBEDF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            gap: 1.875rem;
+            /* 30px */
+            align-items: end;
+            position: relative;
+        }
+
+        .p::before {
+            content: "";
+            background: #DBBEDF;
+            position: absolute;
+            height: 1.875rem;
+            /* 30px */
+            width: 18rem;
+            /* 200px */
+            top: 1.75rem;
+            /* 28% of 100px (1.75rem) */
+            border-radius: 0.3125rem 0.3125rem 1.875rem 1.875rem;
+            /* 5px 5px 30px 30px */
+        }
+
+        .ey {
+            margin-bottom: 1.375rem;
+            /* 22px */
+            background: #81008F;
+            border-radius: 50%;
+            height: 1.875rem;
+            /* 30px */
+            width: 1.625rem;
+            /* 26px */
+            rotate: -30deg;
+            animation: leftEye 2s ease;
+        }
+
+        .ey2 {
+            margin-bottom: 1.375rem;
+            /* 22px */
+            background: #81008F;
+            border-radius: 50%;
+            height: 1.875rem;
+            /* 30px */
+            width: 1.625rem;
+            /* 26px */
+            rotate: 30deg;
+            animation: rightEye 2s ease;
+        }
+
+        @keyframes leftEye {
+
+            0%,
+            100% {
+                translate: 0 0;
+            }
+
+            50% {
+                translate: 1.25rem 0;
+                /* 20px */
+            }
+        }
+
+        @keyframes rightEye {
+
+            0%,
+            100% {
+                translate: 0 0;
+            }
+
+            50% {
+                translate: 0.625rem 0;
+                /* 10px */
+            }
+        }
+
+        @media (max-width:425px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width:426px) and (max-width:768px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width:769px) and (max-width:1200px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:1201px) and (max-width:1600px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:1601px) {
+            html {
+                font-size: 21px;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
