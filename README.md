@@ -25,10 +25,6 @@ If you have improvements or additional items you'd like to contribute, please fo
 3. Make your changes and commit them with clear messages.
 4. Open a pull request to merge your changes.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
 If you have any questions or feedback, feel free to reach out via GitHub Issues.
