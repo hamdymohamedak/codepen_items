@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamdymohamedak</title>
+</head>
+
+<body>
+    <div id="first">
+        <div id="child"></div>
+    </div>
+    <div id="sec">
+        <div id="child2"></div>
+    </div>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            background: #4F77FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div {
+            width: 10rem;
+            height: 9.375rem;
+            background: #FFFFFF;
+            position: relative;
+        }
+
+        #first {
+            margin-bottom: 6.1875rem;
+        }
+
+        #sec {
+            margin-top: 6.1875rem;
+        }
+
+        #child {
+            background: #4F77FF;
+            position: absolute;
+            height: 32%;
+            width: 50%;
+            bottom: 0;
+            right: 0;
+        }
+
+        #child2 {
+            background: #4F77FF;
+            position: absolute;
+            height: 32%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            animation: move 2s infinite;
+        }
+        @media (max-width:425px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width:426px) and (max-width:768px) {
+            html {
+                font-size: 13px;
+            }
+        }
+
+        @media (min-width:769px) and (max-width:1200px) {
+            html {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width:1201px) and (max-width:1600px) {
+            html {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width:1601px) {
+            html {
+                font-size: 21px;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
