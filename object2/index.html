@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <pre id="p1"></pre>
+        <pre id="p2"></pre>
+        <pre id="p3"></pre>
+        <pre id="p4"></pre>
+    </div>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFFFCD;
+            height: 100vh;
+        }
+
+        div {
+            width: 220px;
+            height: 150px;
+            background: #EDAF38;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        pre {
+            background: #FFFFCD;
+            height: 3.75rem;
+            width: 3.75rem;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        #p2 {
+            bottom: 80%;
+            z-index: 9;
+        }
+
+        #p3 {
+            background: #EDAF38;
+            bottom: 70%;
+            height: 5.9375rem;
+            width: 5.9375rem
+        }
+
+        #p4 {
+            bottom: 130%;
+            background: #EDAF38;
+        }
+    </style>
+</body>
